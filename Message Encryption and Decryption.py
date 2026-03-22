@@ -1,3 +1,7 @@
+#This code is regarding the Message Encryption and Decryption
+#Firstly Enter the the text to be Encrypted \
+#Then Copy the Encrypted message and paste to Decrypt it!
+
 import random
 import string
 
