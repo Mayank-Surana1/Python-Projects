@@ -1,4 +1,11 @@
+# is a classic mathematical puzzle involving three rods (A, B, and C) and n disks of different sizes. 
+#Initially, all disks are stacked on rod A in decreasing order of diameter - the largest disk at the bottom and the smallest at the top.
+# Goal is to move the entire stack to another rod (rod C) while following these rules:
 
+# Move only one disk at a time.
+# 1. At each step, you can take the top disk from any rod and place it on another rod.
+# 2. A disk can only be moved if it is the topmost disk of a rod.
+# 3. No larger disk may be placed on top of a smaller disk.
 def tower_of_hanoi(n, source='A', destination='C', auxiliary='B', towers=None, moves=None):
         # Initialize towers and moves list on first call
         if towers is None:
@@ -61,7 +68,7 @@ def main():
         print(f"\n✓ Completed in {len(moves)} moves!")
         
     except ValueError:
-        print("Please enter a valid number!")
+        print("Please enter a valid number!")    #exception Handling
 
 def display_initial(towers):
     max_height = max(len(v) for v in towers.values())
