@@ -1,4 +1,4 @@
-# is a classic mathematical puzzle involving three rods (A, B, and C) and n disks of different sizes. 
+#Tower of Hanoii is a classic mathematical puzzle involving three rods (A, B, and C) and n disks of different sizes. 
 #Initially, all disks are stacked on rod A in decreasing order of diameter - the largest disk at the bottom and the smallest at the top.
 # Goal is to move the entire stack to another rod (rod C) while following these rules:
 
