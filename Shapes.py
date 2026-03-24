@@ -26,8 +26,10 @@ def rhombus(n):
         
         
 def main():
+    is_running = True
+    while is_running:            #Loop untill the user enters "f" to exit
     N = int(input("Enter the size of the shapes: "))
-    value = input("Enter the shape you want to print (triangle/square/parallelogram/rhombus): ").lower()
+    value = input("Enter the shape you want to print (triangle/square/parallelogram/rhombus): or (f) to exit ").lower()
     if value == "triangle" or value == "square" or value == "parallelogram" or value == "rhombus":
         if value == "triangle":
             triangle(N)
@@ -38,7 +40,10 @@ def main():
         elif value == "rhombus":
             rhombus(N)
     else:
-        print("Invalid shape. Please choose triangle, square, parallelogram, or rhombus.")   
+        if value == "f":
+            is_running = false
+        else:
+            print("Invalid shape. Please choose triangle, square, parallelogram, or rhombus.")   
     
 if __name__ == "__main__":    #There must be a main function to run the code, otherwise it will not execute when imported as a module.
     main()
