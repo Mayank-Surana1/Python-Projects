@@ -2,7 +2,6 @@
 # by entering the shape name and the size of the shape. 
 # The functions for each shape are defined separately and called in the main function based on user input.
 
-
 #All the functions can be defined outside the main function, and they can be called inside the main function
 #All of them can be in sepearate python files and imported in the main file, but for simplicity we are keeping them in the same file.
 
