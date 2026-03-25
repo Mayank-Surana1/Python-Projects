@@ -15,14 +15,14 @@ count_lose = 0
 
 def spin_wheel():
     global count_win, count_lose
-    counter1 = ["❤️","🔥","🍀"]
+    counter1 = ["❤️","🔥","🍀"]     #there can be three different counters or a single counter popping the shapes using random module
     counter2 = ["❤️","🔥","🍀"]
     counter3 = ["❤️","🔥","🍀"]
     wheel1 = random.choice(counter1)
     wheel2 = random.choice(counter2)
     wheel3 = random.choice(counter3)
     print(f"{wheel1}   {wheel2}   {wheel3}")
-    time.sleep(1.5)
+    time.sleep(1.5)   
     
     if wheel1 == wheel2 == wheel3:
         print("Congratulations! You won the jackpot!")
