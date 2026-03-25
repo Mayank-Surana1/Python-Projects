@@ -22,7 +22,7 @@ def spin_wheel():
     wheel2 = random.choice(counter2)
     wheel3 = random.choice(counter3)
     print(f"{wheel1}   {wheel2}   {wheel3}")
-    time.sleep(1.5)   
+    time.sleep(1.5)   #usage of time module to make it realistic and can be given a loading interface in between.
     
     if wheel1 == wheel2 == wheel3:
         print("Congratulations! You won the jackpot!")
@@ -35,7 +35,7 @@ def spin_wheel():
     return count_win, count_lose
 
 print("Welcome to the Lucky Wheel Game!")
-print("Please enter S to spin the wheel or Q to quit.")
+print("Please enter S to spin the wheel or Q to quit.").upper()  #Even if user input is 's' or 'q' it takes uppercase charecter.
 while True:
     user_input = input("Enter your choice: ").upper()
     if user_input == "S":
