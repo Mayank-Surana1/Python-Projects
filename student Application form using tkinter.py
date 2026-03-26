@@ -1,3 +1,9 @@
+# Tkinter is Python’s built-in library for creating graphical user interfaces (GUIs).
+# It supports layout management, event handling and customization, making it ideal for rapid GUI development in Python.
+
+
+
+
 import tkinter as tk
 import json
 from datetime import datetime
