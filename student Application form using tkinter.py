@@ -10,7 +10,7 @@ root.title("Student Details Form")        #Title of the GUI interface
 
 def submit_details():                     #Acceptance of all the user input in the form of Dictionary
     student_data = {
-        "name": name_entry.get(),
+        "name": name_entry.get(),          #keys are given as the string and the value is entered by the user in the application form
         "email": email_entry.get(),
         "phone": phone_entry.get(),
         "favorite_language": lb.get(lb.curselection() if lb.curselection() else 0),
@@ -19,7 +19,7 @@ def submit_details():                     #Acceptance of all the user input in t
     
     try:
         with open("student_details.json", "a") as f:             #creation of the json file named Student_details.json 
-            json.dump(student_data, f, indent=4)
+            json.dump(student_data, f, indent=4)                  #Mainly ised for the exception handling
             f.write(",\n")
         status_label.config(text="Details saved successfully!")  #display at the end for success
         clear_fields()
