@@ -1,3 +1,13 @@
+# This code implements an interactive calendar utility with four main functions:
+#        Display monthly calendar for a specific year and month
+#        Display full year calendar
+#        Check leap year status of a given year
+#        Exit the program with a delay
+# The program runs in a loop, presenting a menu-driven interface that uses Python's calendar module to generate and display calendars
+# And time.sleep() for a smooth exit transition.
+
+
+
 import time
 import calendar 
 def month_calender(mm,yy):
