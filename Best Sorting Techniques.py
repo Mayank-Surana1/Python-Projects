@@ -1,3 +1,11 @@
+#The mentioned below are the time complexity for the each sorting techniques
+#the bubble sort is not considered much reliable as compared to the other two sorting techniques
+
+#Algorithm	    Best Case	Worst Case	   Average Case
+#Bubble Sort	O(n)	      O(n²)	       O(n²)
+#Merge Sort	    O(n log n)	  O(n log n)   O(n log n)
+#Quick Sort  	O(n log n)     O(n²)	   O(n log n)
+
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
