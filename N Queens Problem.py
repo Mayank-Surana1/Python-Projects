@@ -1,4 +1,4 @@
-from __future__ import annotations
+from __future__ import annotations #Not required 
 
 def depth_first_search(
     possible_board: list[int],
@@ -53,7 +53,4 @@ def n_queens_solution(n: int) -> None:
 
 
 if __name__ == "__main__":
-    import doctest
-
-    doctest.testmod()      #this is not required but for the future readability and testing its better.
     n_queens_solution(4)
