@@ -1,6 +1,6 @@
 import time
 import datetime
-import pygame
+import pygame   #Used here for Playing the music with Mixer Module
 
 def set_alarm(alarm_time):
     
@@ -21,10 +21,10 @@ def set_alarm(alarm_time):
                 time.sleep(1)  # Check every 1 second
             
             
-            is_running = False
+            is_running = False   #after completing the mp3 player it moves out of the loop
         time.sleep(1)  # Check every 1 second
 
 
 if __name__ == "__main__":
-    alarm_time = input("Enter the alarm time in HH:MM:SS format: ")
+    alarm_time = input("Enter the alarm time in HH:MM:SS format: ")   #can be done in a mian function and can be called seperately
     set_alarm(alarm_time)
