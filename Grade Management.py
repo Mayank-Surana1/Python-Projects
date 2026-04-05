@@ -1,4 +1,8 @@
-def grades(stud,marks):
+#Basically the Grade od the Students are given based on the marks scored by him.
+
+
+
+def grades(stud,marks):      #Used to Display Grades and to hand;e the exceptions
     if marks >= 90:
         print(f"{stud:<10}  A ")
     elif marks >= 80 and marks < 90:
@@ -14,14 +18,14 @@ def grades(stud,marks):
             print(f"{stud:<10}  NULL")
         except AttributeError:
             print("Invalid input for marks. Please enter a valid number.")
-arr = {}
+arr = {}    #A dict to store the key value pairs of the student details
 no_of_students = int(input("Enter the number of students: "))
 for i in range(no_of_students):
-    name = input("Enter the name of the student: ")
+    name = input("Enter the name of the student: ")    #Details of the n student gets input by the user via loop
     mark = int(input("Enter the marks of the student: "))
     arr[name] = mark
 
-print("*" * 20)
+print("*" * 20)    #These are the decorators
 print("\nGrade Report")
 print("Name       Grade")
 for name, mark in arr.items():
