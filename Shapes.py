@@ -6,19 +6,19 @@
 #All the functions can be defined outside the main function, and they can be called inside the main function
 #All of them can be in sepearate python files and imported in the main file, but for simplicity we are keeping them in the same file.
 
-def triangle(n):                           
+def triangle(n):               #this functions returns the triangle shape based on the input n            
     for i in range(n):      
         print(' ' * (n - i - 1) + '*' * (2 * i + 1))   #here '*' is a string that is been concatenated.
         
-def square(n):
+def square(n):     #this functions returns the square shape based on the input n
     for i in range(n): 
         print('* ' * n)
     
-def parellelogram(n):
+def parellelogram(n):   #this functions returns the parellelogram shape based on the input n
     for i in range(n):
         print(' ' * (n - i - 1) + '*' * n)
         
-def rhombus(n):
+def rhombus(n):   #this functions returns the rhombus shape based on the input n
     for i in range(n):
         print(' ' * (n - i - 1) + '*' * (2 * i + 1))   #For upper triangle
     for i in range(n - 2, -1, -1):
