@@ -20,7 +20,7 @@ h = {  # Define heuristic values (h) for each node - estimated cost to reach goa
 
 open = [('A', 0)]  # Initialize open list with starting node 'A' and its cost (0)
 parent = {'A': None}  # Track the parent of each node for path reconstruction
-g = {'A': 0}  # Store the actual cost (g value) from start to each node
+g = {'A': 0}  
 
 while open:  # Main A* algorithm loop - continue while there are nodes to explore
     open.sort(key=lambda x: x[1] + h[x[0]])  # Sort open list by f(n) = g(n) + h(n) and explore the node with lowest f value
